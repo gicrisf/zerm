@@ -129,3 +129,44 @@ disqus = { enabled=false, short_name="" }
 # Table of Contents can be generated for individual articles
 # by adding `ToC = true` in [extra] section in frontmatter
 # ToC = true
+
+# Search via external engine
+ddg_search = true
+
+# You can set every parameter supported by DuckDuckGo
+# https://duckduckgo.com/params
+ddg_properties = [
+    # Target website(s)
+    # (base_url is taken as default)
+    # Tricks:
+    # - Leave it empty to search on the web
+    # - Add bangs to force search in other engines (Google, Amazon, Wikipedia, Reddit...)
+    # -> https://duckduckgo.com/bang
+    # (See the example below)
+    # {value="zwitterio.it !g", name="sites"},
+    # zone
+    # {value="it-it", name="kl"},
+    # color background
+    # {value="", name="k7"},
+    # color header
+    # {value="", name="kj"},
+    # color urls
+    # {value="", name="kx"},
+    # color text
+    # {value="", name="k8"},
+    # color links
+    # {value="", name="k9"},
+    # color visited
+    # {value="", name="kaa"},
+    # Text size - from small to largest (default: "n")
+    # ["s", "m", "n", "l", "t"]
+    # {value="l", name="ks"},
+    # HTTPS On
+    {value="1", name="kh"},
+    # New window
+    # {value="1", name="kn"},
+    # Auto suggest
+    # {value="1", name="kac"},
+    # Favicons
+    # {value="-1", name="kf"},
+]
